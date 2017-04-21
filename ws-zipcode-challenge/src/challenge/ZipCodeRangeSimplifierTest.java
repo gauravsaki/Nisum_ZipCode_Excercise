@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ZipCodeRangerTest {
+public class ZipCodeRangeSimplifierTest {
 
 	@Test
 	public void test() {

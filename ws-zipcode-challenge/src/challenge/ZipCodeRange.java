@@ -16,4 +16,8 @@ public class ZipCodeRange {
 	public int low() { 
 		return m_low;
 	}
+	
+	public String toString() {
+		return "[" + m_low + "," + m_high + "]";
+	}
 }
