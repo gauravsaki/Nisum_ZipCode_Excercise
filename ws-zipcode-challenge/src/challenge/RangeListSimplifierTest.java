@@ -7,6 +7,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import challenge.util.ZipCodeRange;
+
 public class RangeListSimplifierTest {
 
 	@Test

@@ -1,4 +1,4 @@
-package challenge;
+package challenge.util;
 
 public class ZipCodeRange implements Comparable<ZipCodeRange> {
 

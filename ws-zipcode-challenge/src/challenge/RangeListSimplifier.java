@@ -2,8 +2,9 @@ package challenge;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
+
+import challenge.util.ZipCodeRange;
 
 public class RangeListSimplifier {
 	public static List<ZipCodeRange> simplifyRanges(List<ZipCodeRange> ranges) {

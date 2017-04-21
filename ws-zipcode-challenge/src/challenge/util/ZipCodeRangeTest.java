@@ -1,4 +1,4 @@
-package challenge;
+package challenge.util;
 
 import static org.junit.Assert.*;
 
