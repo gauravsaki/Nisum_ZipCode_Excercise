@@ -1,22 +1,25 @@
-package challenge;
+package challenge.util;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import challenge.util.ZipCodeRange;
-
 public class RangeListSimplifier {
+	/**
+	 * Sort and simplify a list of zip code ranges.
+	 * @param ranges - a list of ZipCodeRange objects
+	 * @return an optimized list of ZipCodeRange objects
+	 */
 	public static List<ZipCodeRange> simplifyRanges(List<ZipCodeRange> ranges) {
 		Collections.sort(ranges);
 		ArrayList<ZipCodeRange> simplified = new ArrayList<ZipCodeRange>();
 
-		for (ZipCodeRange range: ranges) {
+		for (ZipCodeRange range : ranges) {
 			if (simplified.isEmpty())
 				// add the first element.
 				simplified.add(range);
 			else if (simplified.get(simplified.size() - 1).high() < range.low())
-				// new range does not overlap.  Add it.
+				// new range does not overlap. Add it.
 				simplified.add(range);
 			else
 				mergeWithOverlapRange(simplified, range);

@@ -2,21 +2,22 @@ package challenge.util;
 
 public class ZipCodeRange implements Comparable<ZipCodeRange> {
 
-	int m_low = 0;
-	int m_high = 0;
+	private int m_low = 0;
+	private int m_high = 0;
+
 	public ZipCodeRange(int low, int high) {
 		m_low = low;
 		m_high = high;
 	}
-	
+
 	public int high() {
 		return m_high;
 	}
-	
-	public int low() { 
+
+	public int low() {
 		return m_low;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "[" + m_low + "," + m_high + "]";
@@ -24,8 +25,8 @@ public class ZipCodeRange implements Comparable<ZipCodeRange> {
 
 	@Override
 	public boolean equals(Object obj) {
-		return (obj instanceof ZipCodeRange) && (((ZipCodeRange)obj).high() == high()) &&
-				(((ZipCodeRange)obj).low() == low());
+		return (obj instanceof ZipCodeRange) && (((ZipCodeRange) obj).high() == high())
+				&& (((ZipCodeRange) obj).low() == low());
 	};
 
 	@Override
@@ -36,9 +37,9 @@ public class ZipCodeRange implements Comparable<ZipCodeRange> {
 
 	@Override
 	public int compareTo(ZipCodeRange that) {
-	    final int BEFORE = -1;
-	    final int EQUAL = 0;
-	    final int AFTER = 1;
+		final int BEFORE = -1;
+		final int EQUAL = 0;
+		final int AFTER = 1;
 		if (this == that || this.equals(that))
 			return EQUAL;
 
