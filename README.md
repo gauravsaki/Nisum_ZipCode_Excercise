@@ -12,10 +12,10 @@ RangeListSimplifier performs the simplification routine on the
 
 You can run the Unit tests from the command line as follows:
 
-$ java -jar jws-java-challenge.jar [94133,94133] [94200,94299] [94600,94699]
+> java -jar jws-java-challenge.jar [94133,94133] [94200,94299] [94600,94699]
 
 [94133,94133] [94200,94299] [94600,94699]
-$ java -jar jws-java-challenge.jar [94133,94133] [94200,94299] [94226,94399]
+> java -jar jws-java-challenge.jar [94133,94133] [94200,94299] [94226,94399]
 [94133,94133] [94200,94399]
 
 The unit tests RangeListSimplifierTest.testChallengeFirstSampleValue and RangeListZImplifierTest.testChallengeSecondSampleValue
