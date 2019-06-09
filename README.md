@@ -20,12 +20,8 @@ You can run the Unit tests from the command line as follows:
 
 The unit tests RangeListSimplifierTest.testChallengeFirstSampleValue and RangeListZImplifierTest.testChallengeSecondSampleValue
   also perform tests on the two input examples described in the challenge.ß
-  
-Coding notes:
-I've used mostly Java 1.5-compatible code, which is pretty old.  When I got to the joining of the ZipCodeRange elements 
-in the result (main method)  I did decide to try a map / collect pattern from the newer Java 1.8 code, instead of importing 
-an apache text utility, or implementing the space joining by hand.  It seemed appropriate wt the time, and interesting
-to try.
+
+
 
 I did my coding in Eclipse, and used the simple Junit library for testing. 
 
